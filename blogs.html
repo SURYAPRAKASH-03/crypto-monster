@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <!--stylesheet-->
+ <link href="style.css"rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+      <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="store.html">
+                <img src="image/Cryptidmonsters logo.png" alt="Bootstrap" width="95" height="95">
+            </a>
+        <p><a href="index.html">store</a>&emsp;<a href="blogs.html">blog </a>&emsp;<a href="soc.html">socials</a></p>
+            
+            </div>
+          </nav>
+    </header>
+    <div class="blogimg111"><h1 class="reveal">BLOG</h1></div>
+    <div class="blogcon">
+    <p class="reveal">
+      Cryptid monsters are creatures that are reported to exist based on anecdotal evidence, folklore, or other unverified sources rather than scientific evidence. These mysterious beings are often the subjects of urban legends, myths, and cryptozoology, a field of study that investigates creatures whose existence has not been proven by mainstream science.
+    </p>
+    <h4 class="reveal">Bigfoot (Sasquatch)</h4>
+    <p class="reveal">A large, ape-like creature said to inhabit remote forests, particularly in the Pacific Northwest of North America.</p>
+    <h4 class="reveal">Loch Ness Monster (Nessie)</h4>
+    <p class="reveal">A creature said to inhabit Loch Ness in Scotland, often described as a large, long-necked, aquatic being.</p>
+    <h4 class="reveal">Chupacabra</h4>
+    <p class="reveal">A creature in Latin American folklore, known for supposedly attacking and drinking the blood of livestock, especially goats.</p>
+    <h4 class="reveal">Yeti (Abominable Snowman)</h4>
+    <p class="reveal">
+      A legendary ape-like creature said to dwell in the Himalayan mountains, often associated with snowy and remote regions.
+    </p>
+    <h4 class="reveal">Mothman</h4>
+    <p class="reveal">A winged creature reportedly seen in the Point Pleasant area of West Virginia, often associated with premonitions of disasters.</p>
+    <h4 class="reveal">Jersey Devil</h4>
+    <p class="reveal">A creature said to inhabit the Pine Barrens of New Jersey, described as a winged, hooved creature with a goat-like head.</p>
+  <h4 class="reveal">Thunderbird</h4>
+  <p class="reveal">A large, bird-like creature in Native American folklore, often associated with thunderstorms and considered a powerful and mystical being.</p>
+  <h4 class="reveal">Ogopogo</h4> 
+  <p class="reveal">A lake monster reported to inhabit Okanagan Lake in British Columbia, Canada, described as a serpent-like creature.</p>
+  <h4 class="reveal">Mokele-Mbembe</h4>
+  <p class="reveal">A cryptid rumored to inhabit the Congo River Basin in Africa, often described as a dinosaur-like creature.</p>
+  <h4 class="reveal">Dover Demon</h4>
+  <p class="reveal">A creature reportedly sighted in Dover, Massachusetts, described as a small, humanoid with glowing eyes and skin like a peach.</p>
+  <br>
+  <br>
+  <p class="reveal">While many cryptid monsters are likely products of folklore, cultural myths, or misidentifications of known animals, they continue to capture the imagination of people around the world. Cryptozoologists and enthusiasts investigate these mysteries in the hope of discovering new species or shedding light on the origins of these legendary creatures. Keep in mind that the existence of most cryptids remains unverified by scientific evidence, and many are considered to be products of myth and legend.</p>
+    </div>  
+</div>
+    <!--bootstrap-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+<script>
+  window.addEventListener("scroll",reveal);
+  function reveal() {
+    const reveal=document.querySelectorAll(".reveal")
+    for(var i=0; i<reveal.length; i++){
+     var windowheight=window.innerHeight;
+     var revealtop=reveal[i].getBoundingClientRect().top;
+     var revealpoint=0;
+
+if(revealtop<windowheight-revealpoint){
+  reveal[i].classList.add('active')
+}
+else{
+  reveal[i].classList.remove('active')
+}
+    }
+  }
+</script>
+</html>
